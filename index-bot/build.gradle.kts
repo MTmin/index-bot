@@ -39,11 +39,14 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxjava:3.0.13")
 
     // telegram
-    api("com.github.pengrad:java-telegram-bot-api:5.4.0")
+    api("com.github.pengrad:java-telegram-bot-api:6.1.0") {
+        exclude(group = "com.google.code.gson")
+    }
+    implementation("com.google.code.gson:gson:2.9.1")
     // await status
     implementation("org.ethereum:leveldbjni-all:1.18.3")
     // elasticsearch
-    implementation("org.elasticsearch.client:elasticsearch-rest-high-level-client:7.15.2")
+    implementation("org.elasticsearch.client:elasticsearch-rest-high-level-client:7.12.0")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
