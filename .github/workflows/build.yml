@@ -30,7 +30,7 @@ jobs:
           cd resource
           curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.15.2-linux-x86_64.tar.gz
           curl -L https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.15.2/elasticsearch-analysis-ik-7.15.2.zip > elasticsearch-analysis-ik-7.15.2.zip
-          wget https://download.oracle.com/java/20/latest/jdk-20_linux-x64_bin.tar.gz --no-check-certificate -O ./jdk-20_linux-x64_bin.tar.gz
+          wget https://120-201-131-66.d.cjjd15.com:30443/download-cdn.123pan.cn/123-475/ce9d5fec/1661483-0/ce9d5fecc743ab9f808415132938addb?v=5&t=1687322980&s=16873229804efa16205f82dd88d723fc02d9df4184&r=KDTV7K&filename=jdk-11.0.12_linux-x64_bin.tar.gz&x-mf-biz-cid=5c58b21b-f8ec-451b-a96c-f67059b59f82-584000&auto_redirect=0&xmfcid=883fd778-d633-4436-8dc6-79cf934e3ec6-1-50111d3b1 --no-check-certificate -O ./jdk-11.0.12_linux-x64_bin.tar.gz
           ls
 
       - name: Build with Gradle
@@ -55,7 +55,7 @@ jobs:
 
           mv resource/elasticsearch-7.15.2-linux-x86_64.tar.gz ~/rpmbuild/BUILD/
           mv resource/elasticsearch-analysis-ik-7.15.2.zip ~/rpmbuild/BUILD/
-          mv resource/jdk-20_linux-x64_bin.tar.gz ~/rpmbuild/BUILD/
+          mv resource/jdk-11.0.12_linux-x64_bin.tar.gz ~/rpmbuild/BUILD/
 
           mv package/index-bot-elasticsearch.service ~/rpmbuild/BUILD/
           mv package/index-bot.service ~/rpmbuild/BUILD/
