@@ -55,7 +55,7 @@ jobs:
 
           mv resource/elasticsearch-7.15.2-linux-x86_64.tar.gz ~/rpmbuild/BUILD/
           mv resource/elasticsearch-analysis-ik-7.15.2.zip ~/rpmbuild/BUILD/
-          mv resource/jdk-11.0.12_linux-x64_bin.tar.gz ~/rpmbuild/BUILD/
+          mv resource/jdk-20_linux-x64_bin.tar.gz ~/rpmbuild/BUILD/
 
           mv package/index-bot-elasticsearch.service ~/rpmbuild/BUILD/
           mv package/index-bot.service ~/rpmbuild/BUILD/
